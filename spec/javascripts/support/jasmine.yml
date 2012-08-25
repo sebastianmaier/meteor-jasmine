@@ -1,0 +1,110 @@
+# src_files
+#
+# Return an array of filepaths relative to src_dir to include before jasmine specs.
+# Default: []
+#
+# EXAMPLE:
+#
+# src_files:
+#   - lib/source1.js
+#   - lib/source2.js
+#   - dist/**/*.js
+#
+src_files:
+    - app/.meteor/local/build/static/packages/underscore/underscore.js
+    - app/.meteor/local/build/static/packages/meteor/client_environment.js
+    - app/.meteor/local/build/static/packages/meteor/helpers.js
+    - app/.meteor/local/build/static/packages/meteor/timers.js
+    - app/.meteor/local/build/static/packages/meteor/dynamics_browser.js
+    - app/.meteor/local/build/static/packages/deps/deps.js
+    - app/.meteor/local/build/static/packages/logging/logging.js
+    - app/.meteor/local/build/static/packages/json/json2.js
+    - app/.meteor/local/build/static/packages/reload/reload.js
+    - app/.meteor/local/build/static/packages/session/session.js
+    - app/.meteor/local/build/static/packages/uuid/uuid.js
+    - app/.meteor/local/build/static/packages/stream/sockjs-0.3.1.js
+    - app/.meteor/local/build/static/packages/stream/stream_client.js
+    - app/.meteor/local/build/static/packages/minimongo/minimongo.js
+    - app/.meteor/local/build/static/packages/minimongo/selector.js
+    - app/.meteor/local/build/static/packages/minimongo/sort.js
+    - app/.meteor/local/build/static/packages/minimongo/uuid.js
+    - app/.meteor/local/build/static/packages/minimongo/modify.js
+    - app/.meteor/local/build/static/packages/minimongo/diff.js
+    - app/.meteor/local/build/static/packages/livedata/livedata_common.js
+    - app/.meteor/local/build/static/packages/livedata/livedata_connection.js
+    - app/.meteor/local/build/static/packages/livedata/client_convenience.js
+    - app/.meteor/local/build/static/packages/mongo-livedata/local_collection_driver.js
+    - app/.meteor/local/build/static/packages/mongo-livedata/collection.js
+    - app/.meteor/local/build/static/packages/jquery/jquery.js
+    - app/.meteor/local/build/static/packages/liveui/liveevents_w3c.js
+    - app/.meteor/local/build/static/packages/liveui/liveevents_now3c.js
+    - app/.meteor/local/build/static/packages/liveui/liveevents.js
+    - app/.meteor/local/build/static/packages/liveui/liverange.js
+    - app/.meteor/local/build/static/packages/liveui/liveui.js
+    - app/.meteor/local/build/static/packages/liveui/innerhtml.js
+    - app/.meteor/local/build/static/packages/liveui/smartpatch.js
+    - app/.meteor/local/build/static/packages/templating/deftemplate.js
+    - app/.meteor/local/build/static/packages/startup/startup_client.js
+    - app/.meteor/local/build/static/packages/handlebars/evaluate.js
+    - app/.meteor/local/build/static/packages/past/past.js
+    - app/.meteor/local/build/static/client/template.app.js
+    - app/.meteor/local/build/static/client/app.js
+
+# stylesheets
+#
+# Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
+# Default: []
+#
+# EXAMPLE:
+#
+# stylesheets:
+#   - css/style.css
+#   - stylesheets/*.css
+#
+stylesheets:
+
+# helpers
+#
+# Return an array of filepaths relative to spec_dir to include before jasmine specs.
+# Default: ["helpers/**/*.js"]
+#
+# EXAMPLE:
+#
+# helpers:
+#   - helpers/**/*.js
+#
+helpers:
+
+# spec_files
+#
+#  Return an array of filepaths relative to spec_dir to include.
+# Default: ["**/*[sS]pec.js"]
+#
+# EXAMPLE:
+#
+# spec_files:
+#   - **/*[sS]pec.js
+#
+spec_files:
+
+# src_dir
+#
+# Source directory path. Your src_files must be returned relative to this path. Will use root if left blank.
+# Default: project root
+#
+# EXAMPLE:
+#
+# src_dir: public
+#
+src_dir:
+
+# spec_dir
+#
+# Spec directory path. Your spec_files must be returned relative to this path.
+# Default: spec/javascripts
+#
+# EXAMPLE:
+#
+# spec_dir: spec/javascripts
+#
+spec_dir:
